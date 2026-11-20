@@ -1,0 +1,11 @@
+FROM mcr.microsoft.com/devcontainers/javascript-node:26-bookworm
+
+RUN npx get-pnpm
+
+RUN mkdir -p /home/node/.local/share \
+    && mkdir -p /home/node/.config \
+    && chown -R node:node /home/node/.local /home/node/.config
+
+USER node
+
+RUN curl -fsSL https://vite.plus | bash

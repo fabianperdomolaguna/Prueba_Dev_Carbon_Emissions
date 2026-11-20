@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../tests/backend/CEM.Api.Tests.Unit/CEM.Api.Tests.Unit.csproj" />
+  <Project Path="CEM.Api/CEM.Api.csproj" />
+</Solution>

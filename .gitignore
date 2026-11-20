@@ -1,0 +1,180 @@
+##################################################
+# OPERATING SYSTEM
+##################################################
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.nfs*
+
+
+##################################################
+# IDEs AND EDITORS
+##################################################
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# VS Code
+# Keep shared workspace configuration and extensions
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+
+##################################################
+# DEV CONTAINERS
+##################################################
+
+# Local-only development configuration
+.devcontainer/*.local.json
+.devcontainer/.env
+
+
+##################################################
+# .NET / ASP.NET CORE
+##################################################
+
+# Build output
+**/bin/
+**/obj/
+**/out/
+
+# Test results
+**/TestResults/
+**/BenchmarkDotNet.Artifacts/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# Visual Studio publish output
+**/publish/
+**/PublishProfiles/
+
+# ASP.NET generated files
+**/wwwroot/lib/
+
+# Local secrets and certificates
+**/secrets.json
+*.pfx
+*.p12
+*.key
+
+
+##################################################
+# ANGULAR / NODE.JS / VITE PLUS
+##################################################
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+out-tsc/
+
+# Angular cache
+.angular/
+
+# Vite cache
+.vite/
+
+# Other build caches
+.cache/
+.parcel-cache/
+.turbo/
+.nx/cache/
+
+# Coverage
+coverage/
+
+# Test reports
+test-results/
+playwright-report/
+blob-report/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+vite-debug.log*
+
+# Package manager local files
+.pnpm-store/
+.npm/
+.yarn/cache/
+.yarn/unplugged/
+
+# Temporary files
+*.tsbuildinfo
+*.swp
+*.swo
+
+
+##################################################
+# ENVIRONMENT VARIABLES AND SECRETS
+##################################################
+
+.env
+.env.*
+!.env.example
+!.env.development.example
+!.env.production.example
+
+# Certificates and private keys
+*.pem
+*.crt
+*.cer
+*.p8
+
+
+##################################################
+# DOCKER
+##################################################
+
+# Local database volumes
+mongo_db_data/
+sqlserver_data/
+postgres_data/
+mysql_data/
+
+# Docker logs
+docker-compose*.log
+
+# Local Docker overrides
+compose.override.yaml
+compose.override.yml
+
+
+##################################################
+# GENERAL TEMPORARY FILES
+##################################################
+
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.log
+
+# Temporary directories
+tmp/
+temp/

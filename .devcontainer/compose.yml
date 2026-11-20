@@ -1,0 +1,23 @@
+services:
+  backend:
+    image: mcr.microsoft.com/devcontainers/dotnet:2-10.0-noble
+    userns_mode: keep-id
+    volumes:
+      - ..:/workspaces:cached,z
+    working_dir: /workspaces/src/backend
+    command: sleep infinity
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.Frontend
+    userns_mode: keep-id
+    init: true
+    volumes:
+      - ..:/workspaces:cached,z
+      - frontend_node_modules:/workspaces/src/frontend/cem_web_app/node_modules
+    working_dir: /workspaces/src/frontend
+    command: sleep infinity
+
+volumes:
+  frontend_node_modules:
